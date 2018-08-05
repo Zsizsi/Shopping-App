@@ -1,0 +1,84 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    grid-template-rows: 20px 1fr 1fr 1fr;
+    grid-row-gap: 20px; 
+    background-image: url("shopping.jpg")
+}
+.picture {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+#add-item {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+    background-color: rgb(222, 236, 237);
+    width: 50%;
+    height: 70%; 
+    box-shadow: 10px 12px 16px 10px rgba(86, 180, 204, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+#add-item h1, #shopping-list h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px; 
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+} 
+#add-item-form {
+    text-align: center;
+}  
+#shopping-list {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+    background-color: lightcoral;
+    width: 50%;
+    box-shadow: 10px 12px 16px 10px rgba(177, 63, 69, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
+} 
+#shopping-list span {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+ 
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px black;
+    height: 30px;
+    width: 250px;
+} 
+input::placeholder {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.add-btn button, .btn-delete {
+    background-color: transparent;
+    font-family: 'Indie Flower', cursive;
+    vertical-align: middle;
+    width: 70px;
+    height: 30px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    border: solid black 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.add-btn button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
